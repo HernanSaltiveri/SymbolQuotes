@@ -1,0 +1,4 @@
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Business\bin\Debug\NNProject.Business.dll
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Business\bin\Debug\NNProject.Business.pdb
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Business\obj\Debug\NNProject.Business.dll
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Business\obj\Debug\NNProject.Business.pdb

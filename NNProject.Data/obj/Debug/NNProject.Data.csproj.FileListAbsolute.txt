@@ -1,0 +1,5 @@
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\obj\Debug\NNProject.Data.csprojResolveAssemblyReference.cache
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\bin\Debug\NNProject.Data.dll
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\bin\Debug\NNProject.Data.pdb
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\obj\Debug\NNProject.Data.dll
+c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\obj\Debug\NNProject.Data.pdb
