@@ -49,5 +49,10 @@ namespace Finance
             chart1.ChartAreas[0].AxisX.IsReversed = true;
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
