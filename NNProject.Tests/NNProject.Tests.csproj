@@ -108,9 +108,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NNProject\NNProject.csproj">
-      <Project>{2705C7A4-96DB-4BBF-A103-637FBA56BD5D}</Project>
-      <Name>NNProject</Name>
+    <ProjectReference Include="..\NNProject.Web\NNProject.Web.csproj">
+      <Project>{9f88be2f-797c-46f5-8780-1a39a970e7dc}</Project>
+      <Name>NNProject.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -19,6 +19,13 @@ namespace NNProject.Web
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "QuotesNew",
+                routeTemplate: "apiNew/{controller}/{action}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
         }
     }
 }

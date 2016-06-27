@@ -5,6 +5,6 @@ c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\o
 c:\users\hernan\documents\visual studio 2013\Projects\NNProject\NNProject.Data\obj\Debug\NNProject.Data.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\NNProject.Data.dll
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\NNProject.Data.pdb
-C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.csprojResolveAssemblyReference.cache
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.dll
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.pdb
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.csprojResolveAssemblyReference.cache

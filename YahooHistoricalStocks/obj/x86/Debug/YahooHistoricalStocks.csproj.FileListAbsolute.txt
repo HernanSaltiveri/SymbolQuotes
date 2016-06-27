@@ -27,5 +27,11 @@ C:\Users\Hernan\Downloads\yahoofinance-master\yahoofinance-master\YahooHistorica
 C:\Users\Hernan\Downloads\yahoofinance-master\yahoofinance-master\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.csproj.GenerateResource.Cache
 C:\Users\Hernan\Downloads\yahoofinance-master\yahoofinance-master\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.exe
 C:\Users\Hernan\Downloads\yahoofinance-master\yahoofinance-master\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.pdb
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\bin\Debug\YahooHistoricalStocks.exe
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\bin\Debug\YahooHistoricalStocks.pdb
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.csprojResolveAssemblyReference.cache
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.StockForm.resources
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.Properties.Resources.resources
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.csproj.GenerateResource.Cache
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.exe
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\YahooHistoricalStocks\obj\x86\Debug\YahooHistoricalStocks.pdb

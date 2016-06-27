@@ -12,5 +12,15 @@ C:\Users\Hernan\Downloads\CardStock\CardStock\CardStock\obj\x86\Debug\CardStock.
 C:\Users\Hernan\Downloads\CardStock\CardStock\CardStock\obj\x86\Debug\CardStock.exe
 C:\Users\Hernan\Downloads\CardStock\CardStock\CardStock\obj\x86\Debug\CardStock.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\bin\Debug\CardStock.exe.config
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\bin\Debug\CardStock.exe
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\bin\Debug\CardStock.pdb
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock.csprojResolveAssemblyReference.cache
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\Views\CardDeckView.baml
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\Views\CardDeckView.g.cs
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\App.g.cs
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock_MarkupCompile.cache
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock.g.resources
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\Jarloo.CardStock.Properties.Resources.resources
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock.csproj.GenerateResource.Cache
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock.exe
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\CardStock\obj\x86\Debug\CardStock.pdb

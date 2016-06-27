@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NNProject.Data.BusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,19 @@ using System.Threading.Tasks;
 
 namespace NNProject.Data
 {
-    public class Bloomberg : IProvider
+    public class Bloomberg : IVendor
     {
-        public string[] getCompanies(string filter) { return null; }
-        public string[] getQuotes(string company) { return null; }
+        public List<Stock> getStocks(string filter) {
+                var lst = new List<Stock>();
+                lst.Add(new Stock() { Symbol = "AAPL" });
+                lst.Add(new Stock() { Symbol = "MSFT" });
+                lst.Add(new Stock() { Symbol = "AMEX" });
+                return lst;
+             }
+        public List<StockQuote> getQuotes(string company) { 
+            
+            return null; 
+        
+        }
     }
 }

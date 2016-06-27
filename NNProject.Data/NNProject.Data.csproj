@@ -39,9 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\Company.cs" />
+    <Compile Include="BusinessObjects\Stock.cs" />
     <Compile Include="BusinessObjects\StockQuote.cs" />
-    <Compile Include="IProvider.cs" />
+    <Compile Include="IVendor.cs" />
+    <Compile Include="Proxy.cs" />
     <Compile Include="Yahoo.cs" />
     <Compile Include="Bloomberg.cs" />
     <Compile Include="Wombat.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NNProject.Data.BusinessObjects
 {
-    class StockQuote
+    public class StockQuote
     {
         public string Name { get; set; }
         public string Symbol { get; set; }

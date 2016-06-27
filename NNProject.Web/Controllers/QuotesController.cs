@@ -1,39 +1,58 @@
-﻿using System;
+﻿using NNProject.Data.BusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+//using System.Web.Mvc;
+using System.Web;
+using System.Web.Script.Serialization;
+using NNProject.Data;
+using System.Configuration;
+using System.Reflection;
 
 namespace NNProject.Web
 {
     public class QuotesController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
+        [HttpGet]
+        public string GetSymbols()
         {
-            return new string[] { "value1", "value2" };
+            var jres = "hola Mundo without filters";
+            return jres;
+        }
+        [HttpGet]
+        public string GetSymbols(string filter)
+        {
+            var pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
+            AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
+            string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
+            Type ptype = Type.GetType(typeAssemblyQualifiedName);
+            IVendor vend = (IVendor)Activator.CreateInstance(ptype);
+
+
+            List<Stock> lst = vend.getStocks();
+            lst.Add(new Stock() { Symbol = "AAPL" });
+            lst.Add(new Stock() { Symbol = "MSFT" });
+            lst.Add(new Stock() { Symbol = "AMEX" });
+
+            var json = new JavaScriptSerializer().Serialize(lst);
+            return json;
+
+            Console.WriteLine(json);
+            var jres = "hola Mundo" + filter;
+            return jres;
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        [HttpGet]
+        public string GetQuote(string symbol)
         {
-            return "Returned Value:" + id.ToString();//"value";
+            var jres = "hola Mundo" + symbol;
+            return jres;
         }
 
-        //// POST api/<controller>
-        //public void Post([FromBody]string value)
-        //{
-        //}
 
-        //// PUT api/<controller>/5
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
-
-        //// DELETE api/<controller>/5
-        //public void Delete(int id)
-        //{
-        //}
+        public string namespaceName { get; set; }
     }
 }
