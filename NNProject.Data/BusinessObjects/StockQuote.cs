@@ -21,7 +21,7 @@ namespace NNProject.Data.BusinessObjects
         public string Volume { get; set; }
 
         public string ChangeYTD { get; set; }
-        public string ChangePercentageYTD { get; set; }
+        public string ChangePercentYTD { get; set; }
         public string High { get; set; }
 
         public string Low { get; set; }

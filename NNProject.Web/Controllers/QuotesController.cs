@@ -32,24 +32,15 @@ namespace NNProject.Web
         [HttpGet]
         public string GetSymbols()
         {
-            var jres = "hola Mundo without filters";
+            var jres = "hello World without filters";
             return jres;
         }
         [HttpGet]
         public string GetSymbols(string filter)
         {
-            //var pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
-            //AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
-            //string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
-            //Type ptype = Type.GetType(typeAssemblyQualifiedName);
-            //IVendor vend = (IVendor)Activator.CreateInstance(ptype);
-
-
             var lst = vend.getStocks(filter);
             var json = new JavaScriptSerializer().Serialize(lst);
             return json;
-
-        
         }
 
         [HttpGet]

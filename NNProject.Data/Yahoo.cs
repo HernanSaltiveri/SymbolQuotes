@@ -22,10 +22,10 @@ namespace NNProject.Data
         }
         public StockQuote getQuotes(string company) { 
             var  lst = new List<StockQuote>();
-            lst.Add(new StockQuote() { Symbol = "AAPL", LastPrice = "10"});
-            lst.Add(new StockQuote() { Symbol = "MSFT", LastPrice = "30"});
-            lst.Add(new StockQuote() { Symbol = "AMEX", LastPrice = "20" });
-            lst.Add(new StockQuote() { Symbol = "NYE", LastPrice = "50" });
+            lst.Add(new StockQuote() { Symbol = "AAPL", LastPrice = "10", Change = "0.05", ChangePercent = "10%", ChangePercentYTD = "10%", ChangeYTD = "0.1", High = "11", Low = "9", MarketCap = "200000", MSDate = DateTime.Now.ToString(), Name = "Apple Computers", Open = "9.5", TimeStamp = DateTime.Now.ToString(), Volume = "20000" });
+            lst.Add(new StockQuote() { Symbol = "MSFT", LastPrice = "30", Change = "0.05", ChangePercent = "10%", ChangePercentYTD = "10%", ChangeYTD = "0.1", High = "11", Low = "9", MarketCap = "200000", MSDate = DateTime.Now.ToString(), Name = "Apple Computers", Open = "9.5", TimeStamp = DateTime.Now.ToString(), Volume = "20000" });
+            lst.Add(new StockQuote() { Symbol = "AMEX", LastPrice = "20", Change = "0.05", ChangePercent = "10%", ChangePercentYTD = "10%", ChangeYTD = "0.1", High = "11", Low = "9", MarketCap = "200000", MSDate = DateTime.Now.ToString(), Name = "Apple Computers", Open = "9.5", TimeStamp = DateTime.Now.ToString(), Volume = "20000" });
+            lst.Add(new StockQuote() { Symbol = "NYE", LastPrice = "50", Change = "0.05", ChangePercent = "10%", ChangePercentYTD = "10%", ChangeYTD = "0.1", High = "11", Low = "9", MarketCap = "200000", MSDate = DateTime.Now.ToString(), Name = "Apple Computers", Open = "9.5", TimeStamp = DateTime.Now.ToString(), Volume = "20000" });
             var result = lst.FirstOrDefault(s => s.Symbol == company);
             return result;
         

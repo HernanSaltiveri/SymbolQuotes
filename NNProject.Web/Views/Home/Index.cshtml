@@ -1,4 +1,5 @@
 ﻿@Scripts.Render("~/bundles/jqueryui")
+@Scripts.Render("~/bundles/index")
 
 <div class="jumbotron">
     <input type="text" id="symbols" name="symbols" />
@@ -12,32 +13,17 @@
 
 <div id="QuoteDiv">
     
-    @*<table>
-        <tr>
-            <td>Name:</td>
-            <td><label id="qName">1</label></td>
-        </tr>
-        <tr>
-            <td>Symbol:</td>
-            <td><label id="qSymbol">1</label></td>
-        </tr>
-        <tr>
-            <td>LastPrice:</td>
-            <td><label id="qLastPrice">1</label></td>
-        </tr>
-        <tr>
-            <td>Change:</td>
-            <td><label id="qChange">1</label></td>
-        </tr>
-
-    </table>*@
+  
     Name:<label id="qName">1</label><br>
     Symbol:<label id="qSymbol">2</label><br>
     LastPrice:<label id="qLastPrice">3</label><br>
     Change:<label id="qChange"></label><br>
+
     ChangePercent:<label title="ChangePercent:" id="qChangePercent"></label><br>
     TimeStamp:<label id="qTimeStamp"></label><br>
     MSDate:<label id="qMSDate"></label><br>
+
+
     MarketCap:<label id="qMarketCap"></label><br>
     Volume:<label id="qVolume"></label><br>
     ChangeYTD:<label id="qChangeYTD"></label><br>
@@ -49,7 +35,7 @@
 </div>
 
 
-@section Scripts {
+@*@section Scripts {
     <script type="text/JavaScript">
         var availableTags = ["AAPL", "MSFT"];
 
@@ -101,45 +87,16 @@
         cUI.ShowQuote(currentQuote);
 
         $(document).ready(function () {
-            //$("#symbols").autocomplete({ source: availableTags });
             cUI.RefreshAutocomplete();
         });
 
 
         $('#searchBtn').click(function () {
             cUI.GetQuote();
-
-
-            //var smbl = document.getElementById('symbols').value;
-            //document.getElementById('quoteLbl').innerHTML = smbl;
-            //var urlgetQuotes = "/apinew/quotes/getQuotes?filter=" + smbl;
-
-            //$.get(urlgetQuotes, null, function (data) {
-            //    var qjson = JSON.parse(data);
-            //});
-
-
-
-
-            //var url = "/apinew/quotes/GetSymbols?filter=aadl";
-            //$.get(url, null, function (data) {
-            //    alert(data);
-            //    availableTags = [];
-            //    var arr_from_json = JSON.parse(data);
-            //    var arrayLength = arr_from_json.length;
-            //    for (var i = 0; i < arrayLength; i++) {
-            //        //alert(myStringArray[i]);
-            //        var tag = arr_from_json[i];
-            //        availableTags.push(tag.Symbol);
-            //        //Do something
-            //    }
-            //    $("#symbols").autocomplete({ source: availableTags });
-            //});
-
         });
 
 
     </script>
-}
+}*@
 
 
