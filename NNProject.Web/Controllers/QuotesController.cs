@@ -16,6 +16,19 @@ namespace NNProject.Web
 {
     public class QuotesController : ApiController
     {
+        public QuotesController()
+        {
+            Init();
+        }
+        IVendor vend;
+        private void Init(){
+            string pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
+            AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
+            string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
+            Type ptype = Type.GetType(typeAssemblyQualifiedName);
+            vend = (IVendor)Activator.CreateInstance(ptype);
+        }
+
         [HttpGet]
         public string GetSymbols()
         {
@@ -25,31 +38,27 @@ namespace NNProject.Web
         [HttpGet]
         public string GetSymbols(string filter)
         {
-            var pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
-            AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
-            string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
-            Type ptype = Type.GetType(typeAssemblyQualifiedName);
-            IVendor vend = (IVendor)Activator.CreateInstance(ptype);
+            //var pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
+            //AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
+            //string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
+            //Type ptype = Type.GetType(typeAssemblyQualifiedName);
+            //IVendor vend = (IVendor)Activator.CreateInstance(ptype);
 
 
-            List<Stock> lst = vend.getStocks("");
-            //lst.Add(new Stock() { Symbol = "AAPL" });
-            //lst.Add(new Stock() { Symbol = "MSFT" });
-            //lst.Add(new Stock() { Symbol = "AMEX" });
-
+            var lst = vend.getStocks(filter);
             var json = new JavaScriptSerializer().Serialize(lst);
             return json;
 
-            //Console.WriteLine(json);
-            //var jres = "hola Mundo" + filter;
-            //return jres;
+        
         }
 
         [HttpGet]
         public string GetQuote(string symbol)
         {
-            var jres = "hola Mundo" + symbol;
-            return jres;
+            var qts = vend.getQuotes(symbol);
+            var json = new JavaScriptSerializer().Serialize(qts);
+            return json;
+
         }
 
 

@@ -9,10 +9,27 @@ using System.Xml.Linq;
 
 namespace NNProject.Data
 {
-    public class Wombat : IVendor
+    public class Yahoo : IVendor
     {
-        public List<Stock> getStocks(string filter) { return null; }
-        public List<StockQuote> getQuotes(string company) { return null; }
+        public List<Stock> getStocks(string filter) {
+            var lst = new List<Stock>();
+            lst.Add(new Stock() { Symbol = "AAPL" });
+            lst.Add(new Stock() { Symbol = "MSFT" });
+            lst.Add(new Stock() { Symbol = "AMEX" });
+            lst.Add(new Stock() { Symbol = "NYE" });
+            return lst;
+            //return null; 
+        }
+        public StockQuote getQuotes(string company) { 
+            var  lst = new List<StockQuote>();
+            lst.Add(new StockQuote() { Symbol = "AAPL", LastPrice = "10"});
+            lst.Add(new StockQuote() { Symbol = "MSFT", LastPrice = "30"});
+            lst.Add(new StockQuote() { Symbol = "AMEX", LastPrice = "20" });
+            lst.Add(new StockQuote() { Symbol = "NYE", LastPrice = "50" });
+            var result = lst.FirstOrDefault(s => s.Symbol == company);
+            return result;
+        
+        }
         //public string[] getCompanies(string filter) {
         //    //http://finance.yahoo.com/q?s=msft&ql=1
             

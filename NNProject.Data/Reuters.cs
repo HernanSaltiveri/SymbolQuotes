@@ -11,6 +11,6 @@ namespace NNProject.Data
     {
 
         public List<Stock> getStocks(string filter) { return null; }
-        public List<StockQuote> getQuotes(string company) { return null; }
+        public StockQuote getQuotes(string company) { return null; }
     }
 }

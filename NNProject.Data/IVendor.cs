@@ -10,6 +10,6 @@ namespace NNProject.Data
     public interface IVendor
     {
         List<Stock> getStocks(string filter);
-        List<StockQuote> getQuotes(string company);
+        StockQuote getQuotes(string company);
     }
 }

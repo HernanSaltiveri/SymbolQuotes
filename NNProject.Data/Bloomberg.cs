@@ -16,7 +16,7 @@ namespace NNProject.Data
                 lst.Add(new Stock() { Symbol = "AMEX" });
                 return lst;
              }
-        public List<StockQuote> getQuotes(string company) { 
+        public StockQuote getQuotes(string company) { 
             
             return null; 
         
