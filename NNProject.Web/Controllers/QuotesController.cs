@@ -32,17 +32,17 @@ namespace NNProject.Web
             IVendor vend = (IVendor)Activator.CreateInstance(ptype);
 
 
-            List<Stock> lst = vend.getStocks();
-            lst.Add(new Stock() { Symbol = "AAPL" });
-            lst.Add(new Stock() { Symbol = "MSFT" });
-            lst.Add(new Stock() { Symbol = "AMEX" });
+            List<Stock> lst = vend.getStocks("");
+            //lst.Add(new Stock() { Symbol = "AAPL" });
+            //lst.Add(new Stock() { Symbol = "MSFT" });
+            //lst.Add(new Stock() { Symbol = "AMEX" });
 
             var json = new JavaScriptSerializer().Serialize(lst);
             return json;
 
-            Console.WriteLine(json);
-            var jres = "hola Mundo" + filter;
-            return jres;
+            //Console.WriteLine(json);
+            //var jres = "hola Mundo" + filter;
+            //return jres;
         }
 
         [HttpGet]
