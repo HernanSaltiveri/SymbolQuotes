@@ -80,6 +80,8 @@ cUI.ShowQuote(currentQuote);
 
 $(document).ready(function () {
     cUI.RefreshAutocomplete();
+    symbols.value = "AAPL";
+    cUI.GetQuote();
 });
 
 
