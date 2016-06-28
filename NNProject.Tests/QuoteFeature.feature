@@ -1,11 +1,14 @@
 ﻿Feature: TestFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Integration Test for the Quote Controller
+
 
 @mytag
-Scenario: Get Quote Integrated Test
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
+Scenario: Get Quote 
+	Given I select AAPL
+	When I press search button
 	Then the result should be 120 on the screen
+
+Scenario: Get List of Symbols
+	Given The Page Starts 
+	When It Finished Loaded
+	Then The Count of Symbols should be N 

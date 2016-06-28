@@ -8,3 +8,6 @@ C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\NNProject
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.dll
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\obj\Debug\NNProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\System.Web.Http.dll
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Data\bin\Debug\System.Web.Http.xml

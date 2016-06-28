@@ -42,6 +42,9 @@
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -63,15 +66,25 @@
     <Reference Include="System.Web.ApplicationServices">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
     <Reference Include="System.Web.Extensions">
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Abstractions">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.RegularExpressions" />
     <Reference Include="System.Web.Routing">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml">
       <Private>True</Private>
     </Reference>
@@ -139,6 +152,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NNProject.Business\NNProject.Business.csproj">
+      <Project>{c16d6091-993a-4045-8fd8-82021ce4d032}</Project>
+      <Name>NNProject.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NNProject.Data\NNProject.Data.csproj">
+      <Project>{e41ae233-01a8-4ab2-911c-e044bde0474c}</Project>
+      <Name>NNProject.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NNProject.Web\NNProject.Web.csproj">
       <Project>{9f88be2f-797c-46f5-8780-1a39a970e7dc}</Project>
       <Name>NNProject.Web</Name>

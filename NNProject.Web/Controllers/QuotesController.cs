@@ -16,7 +16,7 @@ namespace NNProject.Web
 {
     public class QuotesController : ApiController
     {
-        IVendor vend;        
+        public IVendor vend;        
 
         [HttpGet]
         public string GetSymbols(string filter)
@@ -42,18 +42,21 @@ namespace NNProject.Web
         /// </summary>
         public QuotesController()
         {
-            Init();
+            Init(null);
+        }
+        public QuotesController(IConfig conf)
+        {
+            Init(conf);
         }
         /// <summary>
         /// 
         /// </summary>
-        private void Init()
+        private void Init(IConfig conf)
         {
-            string pvend = "NNProject.Data." + ConfigurationManager.AppSettings["Vendor"];
-            AssemblyName assemblyName = AssemblyName.GetAssemblyName(HttpContext.Current.Server.MapPath("~\\Bin\\NNProject.Data.dll"));
-            string typeAssemblyQualifiedName = string.Join(", ", pvend, assemblyName.FullName);
-            Type ptype = Type.GetType(typeAssemblyQualifiedName);
-            vend = (IVendor)Activator.CreateInstance(ptype);
+            if(conf==null)
+                conf = new Config();
+
+            vend = conf.getVendor();
         }
         #endregion
 
