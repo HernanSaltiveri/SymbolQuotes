@@ -29,9 +29,7 @@ C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\System.Web.WebPa
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\Antlr3.Runtime.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\obj\Debug\NNProject.Web.dll
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\obj\Debug\NNProject.Web.pdb
-C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\NNProject.Business.dll
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\NNProject.Data.dll
-C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\NNProject.Business.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\NNProject.Data.pdb
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\obj\Debug\NNProject.Web.csprojResolveAssemblyReference.cache
 C:\Users\Hernan\Documents\GitHub\SymbolQuotes\NNProject.Web\bin\Microsoft.CSharp.dll

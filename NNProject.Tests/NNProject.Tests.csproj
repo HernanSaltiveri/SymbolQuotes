@@ -152,10 +152,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NNProject.Business\NNProject.Business.csproj">
-      <Project>{c16d6091-993a-4045-8fd8-82021ce4d032}</Project>
-      <Name>NNProject.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NNProject.Data\NNProject.Data.csproj">
       <Project>{e41ae233-01a8-4ab2-911c-e044bde0474c}</Project>
       <Name>NNProject.Data</Name>
