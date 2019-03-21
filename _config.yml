@@ -1,0 +1,8 @@
+title: Symbolquotes
+description: This is a test project for now. Work in Progress. Please check my website.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-dinky
+
+gems:
+  - jekyll-mentions
